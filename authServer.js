@@ -146,7 +146,7 @@ const generateAccessToken = (user) => {
     return jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, { expiresIn: '1800s' })
 }
 
-app.listen(3001, () => {
+app.listen(82, () => {
     console.log('Auth server listening');
 })
 
