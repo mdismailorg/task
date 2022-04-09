@@ -10,11 +10,11 @@ const checkOutSchema = mongoose.Schema({
         required: true
     },
     quantity: {
-        type: Number,
+        type: String,
         required: true
     },
     subTotal: {
-        type: Number,
+        type: String,
         required: true
     },
     group: {

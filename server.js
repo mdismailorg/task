@@ -9,6 +9,7 @@ const customerRouter = require('./routers/customerRouter')
 const productRouter = require('./routers/productsRouter')
 const CartRouter = require('./routers/cartRouter')
 const CheckOutRouter = require('./routers/checkOutRouter')
+const OrderRouter = require('./routers/ordersRouter')
 
 const mongoURL = `mongodb+srv://ismailismail:ismailismail@sample.jvejj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
 
@@ -20,6 +21,7 @@ app.use('/customer', customerRouter)
 app.use('/product', productRouter)
 app.use('/cart', CartRouter)
 app.use('/checkout', CheckOutRouter)
+app.use('/order', OrderRouter)
 
 mongoose.connect(mongoURL, {
     useNewUrlParser: true,
